@@ -1,0 +1,17 @@
+﻿{
+  "javascript": [
+    "/App_Plugins/Ecreo.DeployAssistant/DashboardController.js",
+    "/App_Plugins/Ecreo.DeployAssistant/Service.js",
+  ],
+  "dashboards": [
+    {
+      "alias": "ecreoDeployAssistant",
+      "view": "/App_Plugins/Ecreo.DeployAssistant/dashboard.html",
+      "sections": [ "settings" ],
+      "weight": -10,
+      "access": [
+        { "grant": "admin" }
+      ]
+    }
+  ]
+}

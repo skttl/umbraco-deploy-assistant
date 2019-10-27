@@ -1,0 +1,79 @@
+﻿<div ng-controller="Ecreo.DeployAssistant.DashboardController as vm">
+
+    <div ng-if="vm.status" class="umb-panel-group__details">
+
+        <div class="umb-panel-group__details-group-title">
+            <div class="umb-panel-group__details-group-name">Deploy Status</div>
+            <div style="display:flex;">
+                <button class="umb-era-button -white -text-black" type="button" ng-click="vm.exportUdas();" title="Creates a deploy-export file in your data folder">Export all .uda files</button>
+                <button class="umb-era-button -white -text-black" type="button" ng-click="vm.reDeploy();" title="Creates a deploy file in your data folder" style="margin-left:1em;">Import</button>
+                <button class="umb-era-button -white -text-black" type="button" ng-click="vm.reloadStatus();" style="margin-left:1em;">Refresh</button>
+            </div>
+        </div>
+
+        <div class="umb-panel-group__details-checks">
+
+            <div class="umb-panel-group__details-check" ng-if="vm.statusLoaded">
+
+                <div class="umb-panel-group__details-check-title">
+                    <div style="font-size:2em;margin:.25em .5em 0 0; float:left;">
+                        <i class="icon-check color-green" ng-if="vm.status.Complete"></i>
+                        <i class="icon-pulse color-cyan" ng-if="vm.status.InProgress"></i>
+                        <i class="icon-delete color-red" ng-if="vm.status.Failed || (!vm.status.Complete && !vm.status.InProgress)"></i>
+                    </div>
+                    <div class="umb-panel-group__details-check-name">
+                        <span ng-if="vm.status.Export">Export</span>
+                        <span ng-if="!vm.status.Export">Import</span>
+                        <span ng-if="vm.status.Complete">completed</span>
+                        <span ng-if="vm.status.InProgress">in progress</span>
+                        <span ng-if="vm.status.Failed || (!vm.status.Complete && !vm.status.InProgress)">failed</span>
+                    </div>
+                    <div class="umb-panel-group__details-check-description">Last deployment ran <span ng-bind="vm.status.LastEdit | date:'fullDate'"></span> <span ng-bind="vm.status.LastEdit | date:'mediumTime'"></span></div>
+                </div>
+
+                <div class="umb-panel-group__details-status" ng-if="vm.status.Content">
+
+                    <div class="umb-panel-group__details-status-content">
+                        <pre ng-bind="vm.status.Content | json"></pre>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <umb-loading-indicator ng-if="vm.statusLoading"></umb-loading-indicator>
+
+        </div>
+
+    </div>
+
+    <div ng-if="vm.settings" class="umb-panel-group__details">
+
+        <div class="umb-panel-group__details-group-title">
+            <div class="umb-panel-group__details-group-name">Deploy Settings</div>
+            <div style="display:flex;gap:1em;">
+                <button class="umb-era-button -white -text-black" type="button" ng-click="vm.reloadSettings();">Refresh</button>
+            </div>
+        </div>
+
+        <div class="umb-panel-group__details-checks">
+
+            <div class="umb-panel-group__details-check" ng-if="vm.settingsLoaded">
+                <div class="umb-panel-group__details-status" ng-if="vm.settings">
+
+                    <div class="umb-panel-group__details-status-content">
+                        <pre ng-bind-html="vm.settings"></pre>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <umb-loading-indicator ng-if="vm.settingsLoading"></umb-loading-indicator>
+
+        </div>
+
+    </div>
+
+
+</div>
