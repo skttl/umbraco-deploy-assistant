@@ -5,15 +5,16 @@
 [![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.org/projects/backoffice-extensions/deploy-assistant)
 
 
-[![Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/icon.png)]
+[Logo](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/icon.png)
+
 A dashboard for importing and exporting with Umbraco Deploy.
 
 In stead of having to manually create `deploy`, `deploy-export` or similar marker files to trigger different things in Umbraco Deploy, this dashboard lets you do it by clicking simple buttons.
 
 In addition to that, you can see any errors in `deploy-failed` files, and the current configuration for Umbraco Deploy.
 
-[![Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/screenshot1.png)]
-[![Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/screenshot2.png)]
+[Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/screenshot1.png)
+[Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/screenshot2.png)
 
 
 ## Contributing to this project
