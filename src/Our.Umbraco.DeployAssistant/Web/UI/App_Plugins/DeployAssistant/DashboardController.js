@@ -1,4 +1,4 @@
-﻿angular.module('umbraco').controller('Ecreo.DeployAssistant.DashboardController', function (notificationsService, ecreoDeployAssistantService) {
+﻿angular.module('umbraco').controller('Our.Umbraco.DeployAssistant.DashboardController', function (notificationsService, ourUmbracoDeployAssistantService) {
 
     vm = this;
 
@@ -7,7 +7,7 @@
     vm.reloadStatus = function () {
         vm.statusLoading = true;
 
-        ecreoDeployAssistantService.reloadStatus().then(function (response) {
+        ourUmbracoDeployAssistantService.reloadStatus().then(function (response) {
             vm.status = response.data;
             vm.statusLoaded = true;
             vm.statusLoading = false;
@@ -37,7 +37,7 @@
     vm.reDeploy = function () {
         vm.statusLoading = true;
 
-        ecreoDeployAssistantService.reimport().then(function (response) {
+        ourUmbracoDeployAssistantService.reimport().then(function (response) {
             if (response.data) {
 
                 // deploy marker created, set status as in progress
@@ -57,7 +57,7 @@
     vm.exportUdas = function () {
         vm.statusLoading = true;
 
-        ecreoDeployAssistantService.exportUdas().then(function (response) {
+        ourUmbracoDeployAssistantService.exportUdas().then(function (response) {
             if (response.data) {
 
                 // deploy marker created, set status as in progress
@@ -79,7 +79,7 @@
 
     vm.reloadSettings = function () {
         vm.settingsLoading = true;
-        ecreoDeployAssistantService.reloadSettings().then(function (response) {
+        ourUmbracoDeployAssistantService.reloadSettings().then(function (response) {
             vm.settings = response.data;
             
             vm.settingsLoaded = true;

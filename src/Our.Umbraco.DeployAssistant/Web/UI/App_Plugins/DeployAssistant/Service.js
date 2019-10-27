@@ -1,4 +1,4 @@
-﻿angular.module('umbraco.services').factory('ecreoDeployAssistantService', function ($http) {
+﻿angular.module('umbraco.services').factory('ourUmbracoDeployAssistantService', function ($http) {
 
     var service = {
 

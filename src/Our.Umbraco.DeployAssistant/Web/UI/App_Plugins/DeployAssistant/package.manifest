@@ -1,12 +1,12 @@
 ﻿{
   "javascript": [
-    "/App_Plugins/Ecreo.DeployAssistant/DashboardController.js",
-    "/App_Plugins/Ecreo.DeployAssistant/Service.js",
+    "/App_Plugins/DeployAssistant/DashboardController.js",
+    "/App_Plugins/DeployAssistant/Service.js",
   ],
   "dashboards": [
     {
-      "alias": "ecreoDeployAssistant",
-      "view": "/App_Plugins/Ecreo.DeployAssistant/dashboard.html",
+      "alias": "ourUmbracoDeployAssistant",
+      "view": "/App_Plugins/DeployAssistant/dashboard.html",
       "sections": [ "settings" ],
       "weight": -10,
       "access": [
