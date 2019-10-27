@@ -2,6 +2,6 @@
 
 <language alias="en" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
   <area alias="dashboardTabs">
-    <key alias="ecreoDeployAssistant">Deploy Assistant</key>
+    <key alias="ourUmbracoDeployAssistant">Deploy Assistant</key>
   </area>
 </language>
