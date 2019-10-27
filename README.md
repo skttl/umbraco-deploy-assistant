@@ -5,7 +5,7 @@
 [![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.org/projects/backoffice-extensions/deploy-assistant)
 
 
-[Logo](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/icon.png)
+![Logo](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/icon.png)
 
 A dashboard for importing and exporting with Umbraco Deploy.
 
@@ -13,8 +13,9 @@ In stead of having to manually create `deploy`, `deploy-export` or similar marke
 
 In addition to that, you can see any errors in `deploy-failed` files, and the current configuration for Umbraco Deploy.
 
-[Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/screenshot1.png)
-[Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/screenshot2.png)
+![Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/screenshot1.png)
+
+![Screenshot](https://raw.githubusercontent.com/skttl/umbraco-deploy-assistant/develop/docs/screenshot2.png)
 
 
 ## Contributing to this project
@@ -43,3 +44,5 @@ Have a question?
 Copyright &copy; 2019 Søren Kottal
 
 Licensed under the [MIT License](LICENSE.md)
+
+Icon by [Igé Maulana, ID ](https://thenounproject.com/im04/)
