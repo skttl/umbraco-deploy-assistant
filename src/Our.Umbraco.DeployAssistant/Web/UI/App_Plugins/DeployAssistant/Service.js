@@ -7,7 +7,7 @@
         },
 
         reimport: function () {
-            return $http.post('/umbraco/backoffice/DeployAssistant/Deploy/Reimport');
+            return $http.post('/umbraco/backoffice/DeployAssistant/Deploy/Import');
         },
 
         reloadSettings: function () {
