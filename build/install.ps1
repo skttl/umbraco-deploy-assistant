@@ -3,7 +3,7 @@ param($installPath, $toolsPath, $package, $project)
 $appPluginsFolder = $project.ProjectItems | Where-Object { $_.Name -eq "App_Plugins" }
 $deployAssistantFolder = $appPluginsFolder.ProjectItems | Where-Object { $_.Name -eq "DeployAssistant" }
 
-if (!$docTypeGridEditorFolder)
+if (!$deployAssistantFolder)
 {
 	$newPackageFiles = "$installPath\Content\App_Plugins\DeployAssistant"
 
